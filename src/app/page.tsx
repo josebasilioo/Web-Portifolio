@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import styles from './page.module.css';
 
-import TopBar from '@/components/TopBar'
+import TopBar from '@/components/TopBar';
 
 export default function Home() {
   return (
@@ -9,5 +9,5 @@ export default function Home() {
       <TopBar />
       <p>OIE</p>
     </div>
-  )
+  );
 }
