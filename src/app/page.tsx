@@ -1,13 +1,16 @@
-import Image from 'next/image';
-import styles from './page.module.css';
-
+'use client';
 import TopBar from '@/components/TopBar';
+import Equalizer from '@/Views/Waves';
 
+import style from './page.module.css';
+
+// TO-DO: solve autoplay problem for Chrome
 export default function Home() {
   return (
-    <div>
+    <div className={style.main}>
+      <audio autoPlay loop src="/saturn.mp3" />
       <TopBar />
-      <p>OIE</p>
+      <Equalizer />
     </div>
   );
 }
