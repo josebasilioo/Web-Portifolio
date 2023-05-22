@@ -1,5 +1,6 @@
 'use client';
 import Main from '@/views/Main';
+import Experiences from '@/views/Experiences';
 
 import * as S from './Page.styles';
 
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <S.Layout>
       <Main id="home" />
+      <Experiences id="experiences" />
     </S.Layout>
   );
 }
