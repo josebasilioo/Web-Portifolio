@@ -1,16 +1,13 @@
 'use client';
-import TopBar from '@/components/TopBar';
-import Equalizer from '@/Views/Waves';
+import Main from '@/views/Main';
 
-import style from './page.module.css';
+import * as S from './Page.styles';
 
 // TO-DO: solve autoplay problem for Chrome
 export default function Home() {
   return (
-    <div className={style.main}>
-      <audio autoPlay loop src="/saturn.mp3" />
-      <TopBar />
-      <Equalizer />
-    </div>
+    <S.Layout>
+      <Main id="home" />
+    </S.Layout>
   );
 }

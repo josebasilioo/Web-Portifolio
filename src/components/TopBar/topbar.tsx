@@ -1,6 +1,7 @@
+'use client';
 import React from 'react';
 
-import styles from './topbar.module.css';
+import * as S from './TopBar.styles';
 
 const options = [
   {
@@ -27,13 +28,13 @@ const options = [
 
 const TopBar: React.FC = () => {
   return (
-    <section className={styles.topbar}>
+    <S.Topbar>
       {options.map((element) => (
-        <a key={element.href} className={styles.sections} href={element.href}>
+        <S.Sections key={element.href} href={element.href}>
           {element.name}
-        </a>
+        </S.Sections>
       ))}
-    </section>
+    </S.Topbar>
   );
 };
 

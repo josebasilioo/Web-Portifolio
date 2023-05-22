@@ -1,10 +1,11 @@
 'use client';
 import * as THREE from 'three';
 import { Canvas, useLoader, useFrame } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+// import { OrbitControls } from '@react-three/drei';
 import { Suspense, useCallback, useMemo, useRef } from 'react';
 
 import circle from './assets/circle.png';
+import { waveColors } from '@/styles/colors';
 
 const Points: React.FC = () => {
   const texture = useLoader(THREE.TextureLoader, circle.src);
@@ -22,16 +23,13 @@ const Points: React.FC = () => {
     [t, f, a]
   );
 
-  const setBg = () => {
-    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    return '#' + randomColor;
-  };
-
   setInterval(() => {
     if (materialRef.current) {
-      materialRef.current.color = new THREE.Color(setBg());
+      materialRef.current.color = new THREE.Color(
+        waveColors[Math.floor(Math.random() * waveColors.length)]
+      );
     }
-  }, 2000);
+  }, 8000);
 
   const count = 100;
   const gap = 3;
@@ -88,7 +86,7 @@ const Points: React.FC = () => {
         ref={materialRef}
         attach="material"
         map={texture}
-        color="red"
+        color="#00FFFF"
         size={0.5}
         sizeAttenuation
         transparent={true}
@@ -105,11 +103,8 @@ const FloatingPoints: React.FC = () => {
       camera={{ position: [0, 100, 0], fov: 75 }}
       style={{ width: '100vw', height: '100vh' }}
     >
-      <OrbitControls />
-      <Suspense fallback={null}>
-        <Points />
-        {/* <audio autoPlay src={saturn} /> */}
-      </Suspense>
+      {/* <OrbitControls /> */}
+      <Points />
     </Canvas>
   );
 };
