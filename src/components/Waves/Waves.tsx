@@ -2,7 +2,7 @@
 import * as THREE from 'three';
 import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 // import { OrbitControls } from '@react-three/drei';
-import { Suspense, useCallback, useMemo, useRef } from 'react';
+import { useCallback, useMemo, useRef } from 'react';
 
 import circle from './assets/circle.png';
 import { waveColors } from '@/styles/colors';
