@@ -5,7 +5,7 @@ export const Card = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
   border-radius: 10px;
   background-color: #4831d4;
 `;

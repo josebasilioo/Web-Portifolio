@@ -1,8 +1,11 @@
 import React from 'react';
-
-import * as S from './Experiences.styles';
+import Image from 'next/image';
 
 import CardSelector from '@/components/CardSelector';
+
+import * as S from './Experiences.styles';
+import Color from './assets/color.png';
+import Dots from './assets/dots.png';
 
 interface ExperienceProps {
   id: string;
@@ -58,6 +61,8 @@ const data = [
 const Experiences: React.FC<ExperienceProps> = ({ id }) => {
   return (
     <S.ExperienceSection id={id}>
+      <S.Image src={Color.src} alt="Nebulosa rosa" />
+      <S.Overlay />
       <S.SectionTitle>Experiência Profissional</S.SectionTitle>
       <S.ExperienceContent>
         {data.map((content, i) => (

@@ -27,7 +27,7 @@ export const Selector = styled.div`
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  width: 90%;
+  width: 80%;
   height: 48px;
   border-radius: 8px;
   background-color: #2d1aa3;

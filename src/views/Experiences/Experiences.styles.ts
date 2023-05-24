@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Dots from './assets/dots.png';
+
 export const SectionTitle = styled.p`
   color: white;
   font-size: 4rem;
@@ -29,6 +31,7 @@ export const ExperienceSection = styled.section`
   min-width: 100vw;
   min-height: 100vh;
   gap: 48px;
+  position: sticky;
 `;
 
 export const ExperienceContent = styled.div`
@@ -39,4 +42,28 @@ export const ExperienceContent = styled.div`
   padding: 8px 0;
   width: 100%;
   gap: 16px;
+`;
+
+export const Image = styled.img`
+  position: absolute;
+  z-index: -1;
+  width: 80%;
+  height: 80%;
+  top: 20%;
+  left: 0;
+`;
+
+export const Overlay = styled.div`
+  z-index: -1;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url('/dots.png');
+  background-size: 200px;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
 `;
