@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as S from './Tag.styles';
 
-interface Props {
+export interface Props {
   content: string;
 }
 
