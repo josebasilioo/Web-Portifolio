@@ -53,7 +53,7 @@ export const RowGrid = styled.section`
   gap: 8px;
 `;
 
-export const Text = styled.text`
+export const Text = styled.p`
   color: white;
   opacity: 0.9;
   font-size: 1.5rem;

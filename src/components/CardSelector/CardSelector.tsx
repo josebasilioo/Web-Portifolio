@@ -24,7 +24,7 @@ const CardSelector: React.FC<ContentCardProps> = ({ content }) => {
         </S.Content>
         <S.Content>
           <S.Text>{content.date}</S.Text>
-          <S.Hover focused={focused}>
+          <S.Hover focused={focused ? 1 : 0}>
             <S.Text>+</S.Text>
           </S.Hover>
         </S.Content>

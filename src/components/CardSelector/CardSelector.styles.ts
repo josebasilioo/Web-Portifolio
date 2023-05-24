@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface HoverProps {
-  focused: boolean;
+  focused: boolean | number;
 }
 
 export const Hover = styled.div<HoverProps>`
