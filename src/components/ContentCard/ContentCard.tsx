@@ -1,29 +1,45 @@
 import React from 'react';
+import Image from 'next/image';
 
 import Tag from '@/components/Tag';
+
+import Location from './assets/location-pin-svgrepo-com.svg';
+import Link from './assets/link-round-1110-svgrepo-com.svg';
 
 import * as S from './ContentCard.styles';
 
 type Props = {
   type: string;
+  occupation: string;
   link: string;
   name: string;
   text: string;
   image: string;
+  date: string;
   tags: string[];
 };
 
-interface ContentCardProps {
+export interface ContentCardProps {
   content: Props;
 }
 
 const ContentCard: React.FC<ContentCardProps> = ({ content }) => {
   return (
-    <S.Card>
+    <S.Card
+      key="content-card"
+      initial={{ opacity: 0, height: 0, margin: 0 }}
+      animate={{ opacity: 1, height: 'fit-content', margin: '8px 0' }}
+      exit={{ opacity: 0, height: 0, margin: 0 }}
+    >
       <S.Grid>
         <S.TextContent>
           <S.RowGrid>
+            <Image alt="Location Icon" src={Location} width={20} height={20} />
             <S.References>{content.type}</S.References>
+
+            <span style={{ width: '10%' }} />
+
+            <Image alt="Link Icon" src={Link} width={20} height={20} />
             <S.References>
               <a href={content.link} target="_blank">
                 {content.name}

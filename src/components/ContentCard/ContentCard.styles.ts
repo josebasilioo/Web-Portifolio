@@ -1,11 +1,11 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: fit-content;
+  width: 90%;
   border-radius: 10px;
   background-color: #4831d4;
 `;

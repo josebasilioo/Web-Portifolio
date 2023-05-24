@@ -13,10 +13,6 @@ const options = [
     href: '/#expertise',
   },
   {
-    name: 'Projetos',
-    href: '/#projects',
-  },
-  {
     name: 'Experiências',
     href: '/#experiences',
   },
