@@ -1,6 +1,7 @@
 'use client';
 import Main from '@/views/Main';
 import Experiences from '@/views/Experiences';
+import Contact from '@/views/Contact';
 
 import * as S from './Page.styles';
 
@@ -10,6 +11,7 @@ export default function Home() {
     <S.Layout>
       <Main id="home" />
       <Experiences id="experiences" />
+      <Contact id="contact" />
     </S.Layout>
   );
 }

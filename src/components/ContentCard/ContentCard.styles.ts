@@ -8,6 +8,10 @@ export const Card = styled(motion.div)`
   width: 80%;
   border-radius: 10px;
   background-color: #4831d4;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Grid = styled.div`

@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import Dots from './assets/dots.png';
-
 export const SectionTitle = styled.p`
   color: white;
   font-size: 4rem;
@@ -17,6 +15,10 @@ export const SectionTitle = styled.p`
     bottom: 12%;
     left: -1%;
     z-index: -1;
+
+    @media (max-width: 480px) {
+      width: 90%;
+    }
   }
 `;
 
@@ -32,6 +34,10 @@ export const ExperienceSection = styled.section`
   min-height: 100vh;
   gap: 48px;
   position: sticky;
+
+  @media (max-width: 480px) {
+    padding: 16px;
+  }
 `;
 
 export const ExperienceContent = styled.div`

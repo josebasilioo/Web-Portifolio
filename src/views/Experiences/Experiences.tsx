@@ -1,11 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 
 import CardSelector from '@/components/CardSelector';
 
 import * as S from './Experiences.styles';
 import Color from './assets/color.png';
-import Dots from './assets/dots.png';
 
 interface ExperienceProps {
   id: string;

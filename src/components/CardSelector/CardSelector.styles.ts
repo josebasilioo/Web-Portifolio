@@ -32,6 +32,10 @@ export const Selector = styled.div`
   border-radius: 8px;
   background-color: #2d1aa3;
   padding: 4px 16px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Content = styled.section`
@@ -41,10 +45,18 @@ export const Content = styled.section`
   gap: 24px;
   width: fit-content;
   height: 100%;
+
+  @media (max-width: 480px) {
+    gap: 4px;
+  }
 `;
 
 export const Text = styled.p`
-  font-size: 1.875rem;
+  font-size: 1.975rem;
   font-weight: 500;
   color: white;
+
+  @media (max-width: 480px) {
+    font-size: 1.225rem;
+  }
 `;
