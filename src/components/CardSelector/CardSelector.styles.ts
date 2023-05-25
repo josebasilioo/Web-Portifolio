@@ -4,6 +4,21 @@ interface HoverProps {
   focused: boolean | number;
 }
 
+export const SelectorContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  padding: 4px 16px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+`;
+
 export const Hover = styled.div<HoverProps>`
   display: flex;
   justify-content: center;
@@ -20,6 +35,11 @@ export const Hover = styled.div<HoverProps>`
   &:focus-within {
     background-color: #4831d4;
   }
+
+  @media (max-width: 480px) {
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 export const Selector = styled.div`
@@ -27,14 +47,14 @@ export const Selector = styled.div`
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  width: 80%;
+  width: 100%;
   height: 48px;
   border-radius: 8px;
   background-color: #2d1aa3;
   padding: 4px 16px;
 
   @media (max-width: 480px) {
-    width: 100%;
+    padding: 4px 8px;
   }
 `;
 
@@ -58,5 +78,9 @@ export const Text = styled.p`
 
   @media (max-width: 480px) {
     font-size: 1.225rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.125rem;
   }
 `;

@@ -5,9 +5,10 @@ export const Card = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
   background-color: #4831d4;
+  pointer-events: none;
 
   @media (max-width: 480px) {
     width: 100%;

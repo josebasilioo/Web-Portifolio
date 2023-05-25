@@ -11,12 +11,8 @@ const CardSelector: React.FC<ContentCardProps> = ({ content }) => {
   const [focused, setFocused] = useState(false);
 
   return (
-    <>
-      <S.Selector
-        tabIndex={1}
-        onFocus={() => setFocused(true)}
-        onBlur={() => setFocused(false)}
-      >
+    <S.SelectorContent tabIndex={1} onBlur={() => setFocused(false)}>
+      <S.Selector onClick={() => setFocused(!focused)}>
         <S.Content>
           <S.Text>
             {content.occupation} {'@'} {content.name}
@@ -24,7 +20,10 @@ const CardSelector: React.FC<ContentCardProps> = ({ content }) => {
         </S.Content>
         <S.Content>
           <S.Text>{content.date}</S.Text>
-          <S.Hover focused={focused ? 1 : 0}>
+          <S.Hover
+            focused={focused ? 1 : 0}
+            onClick={() => setFocused(!focused)}
+          >
             <S.Text>+</S.Text>
           </S.Hover>
         </S.Content>
@@ -34,7 +33,7 @@ const CardSelector: React.FC<ContentCardProps> = ({ content }) => {
           <ContentCard key={`${1} + ${content.name}`} content={content} />
         )}
       </AnimatePresence>
-    </>
+    </S.SelectorContent>
   );
 };
 

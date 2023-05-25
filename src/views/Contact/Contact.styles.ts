@@ -7,8 +7,14 @@ export const Section = styled.section`
   flex-direction: column;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   padding: 96px 40px 80px 96px;
+  gap: 5rem;
+
+  @media (max-width: 480px) {
+    padding: 16px;
+  }
 `;
 
 export const TitleContent = styled.div`
@@ -16,6 +22,14 @@ export const TitleContent = styled.div`
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  width: 100%;
+  height: fit-content;
+`;
+
+export const ContactContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   width: 100%;
   height: fit-content;
 `;
@@ -55,6 +69,17 @@ export const Reference = styled.p`
 export const Link = styled.a`
   color: #fd3a4a;
   border-bottom: 2px dashed #fd3a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+export const Bold = styled.a`
+  color: #fd3a4a;
   text-decoration: none;
   transition: opacity 0.2s;
   cursor: pointer;
