@@ -14,7 +14,7 @@ export const SelectorContent = styled.div`
   border-radius: 8px;
   padding: 4px 16px;
 
-  @media (max-width: 480px) {
+  @media (max-width: 620px) {
     width: 100%;
   }
 `;
@@ -66,21 +66,21 @@ export const Content = styled.section`
   width: fit-content;
   height: 100%;
 
-  @media (max-width: 480px) {
+  @media (max-width: 863px) {
     gap: 4px;
   }
 `;
 
 export const Text = styled.p`
-  font-size: 1.975rem;
+  font-size: 1.775rem;
   font-weight: 500;
   color: white;
 
-  @media (max-width: 480px) {
-    font-size: 1.225rem;
+  @media (max-width: 863px) {
+    font-size: 1.325rem;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 620px) {
     font-size: 1.125rem;
   }
 `;

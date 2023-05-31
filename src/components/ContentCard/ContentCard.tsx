@@ -37,7 +37,7 @@ const ContentCard: React.FC<ContentCardProps> = ({ content }) => {
             <Image alt="Location Icon" src={Location} width={20} height={20} />
             <S.References>{content.type}</S.References>
 
-            <span style={{ width: '10%' }} />
+            <span style={{ width: '20px' }} />
 
             <Image alt="Link Icon" src={Link} width={20} height={20} />
             <S.References>

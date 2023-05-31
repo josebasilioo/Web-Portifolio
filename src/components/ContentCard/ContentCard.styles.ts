@@ -8,7 +8,6 @@ export const Card = styled(motion.div)`
   width: 100%;
   border-radius: 10px;
   background-color: #4831d4;
-  pointer-events: none;
 
   @media (max-width: 480px) {
     width: 100%;
@@ -22,6 +21,10 @@ export const Grid = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 863px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const TextContent = styled.section`

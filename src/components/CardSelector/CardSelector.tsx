@@ -11,7 +11,7 @@ const CardSelector: React.FC<ContentCardProps> = ({ content }) => {
   const [focused, setFocused] = useState(false);
 
   return (
-    <S.SelectorContent tabIndex={1} onBlur={() => setFocused(false)}>
+    <S.SelectorContent tabIndex={1}>
       <S.Selector onClick={() => setFocused(!focused)}>
         <S.Content>
           <S.Text>
@@ -24,7 +24,7 @@ const CardSelector: React.FC<ContentCardProps> = ({ content }) => {
             focused={focused ? 1 : 0}
             onClick={() => setFocused(!focused)}
           >
-            <S.Text>+</S.Text>
+            {focused ? <S.Text>-</S.Text> : <S.Text>+</S.Text>}
           </S.Hover>
         </S.Content>
       </S.Selector>

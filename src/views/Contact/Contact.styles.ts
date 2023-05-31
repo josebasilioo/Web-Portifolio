@@ -12,8 +12,8 @@ export const Section = styled.section`
   padding: 96px 40px 80px 96px;
   gap: 5rem;
 
-  @media (max-width: 480px) {
-    padding: 16px;
+  @media (max-width: 620px) {
+    padding: 96px 40px 40px 40px;
   }
 `;
 
@@ -32,6 +32,10 @@ export const ContactContent = styled.div`
   gap: 5rem;
   width: 100%;
   height: fit-content;
+
+  @media (max-width: 620px) {
+    gap: 3rem;
+  }
 `;
 
 export const FilesContent = styled.div`
@@ -39,6 +43,11 @@ export const FilesContent = styled.div`
   flex-wrap: wrap;
   gap: 32px;
   height: fit-content;
+
+  @media (max-width: 620px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 `;
 
 export const Box = styled.div`
@@ -52,6 +61,10 @@ export const Box = styled.div`
 export const Title = styled.p`
   color: white;
   font-size: 3.5rem;
+
+  @media (max-width: 620px) {
+    font-size: 3rem;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -64,6 +77,10 @@ export const Reference = styled.p`
   color: white;
   font-size: 1.625rem;
   font-weight: 800;
+
+  @media (max-width: 620px) {
+    font-size: 1.325rem;
+  }
 `;
 
 export const Link = styled.a`

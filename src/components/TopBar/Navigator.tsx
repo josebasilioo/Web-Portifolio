@@ -3,34 +3,24 @@ import React from 'react';
 
 import * as S from './TopBar.styles';
 
+const production = process.env.REACT_APP_ENV === 'production';
+
 const options = [
   {
     name: 'Home',
-    href:
-      process.env.REACT_APP_ENV === 'production'
-        ? '/portifolio/#home'
-        : '/#home',
+    href: production ? '/portifolio/#home' : '/#home',
   },
   {
     name: 'Expertise',
-    href:
-      process.env.REACT_APP_ENV === 'production'
-        ? '/portifolio/#expertise'
-        : '/#expertise',
+    href: production ? '/portifolio/#expertise' : '/#expertise',
   },
   {
     name: 'Experiências',
-    href:
-      process.env.REACT_APP_ENV === 'production'
-        ? '/portifolio/#experiences'
-        : '/#experiences',
+    href: production ? '/portifolio/#experiences' : '/#experiences',
   },
   {
     name: 'Contato',
-    href:
-      process.env.REACT_APP_ENV === 'production'
-        ? '/portifolio/#contact'
-        : '/#contact',
+    href: production ? '/portifolio/#contact' : '/#contact',
   },
 ];
 
