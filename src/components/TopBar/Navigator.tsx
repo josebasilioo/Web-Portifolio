@@ -6,19 +6,19 @@ import * as S from './TopBar.styles';
 const options = [
   {
     name: 'Home',
-    href: '/#home',
+    href: '/portifolio/#home',
   },
   {
     name: 'Expertise',
-    href: '/#expertise',
+    href: '/portifolio/#expertise',
   },
   {
     name: 'Experiências',
-    href: '/#experiences',
+    href: '/portifolio/#experiences',
   },
   {
     name: 'Contato',
-    href: '/#contact',
+    href: '/portifolio/#contact',
   },
 ];
 
