@@ -31,7 +31,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
       </S.TitleContent>
 
       <S.ContactContent>
-        <S.Subtitle>OLÁ! :{')'}</S.Subtitle>
+        <S.Subtitle>OIÊÊÊ! :{')'}</S.Subtitle>
         <S.FilesContent>
           <S.Box>
             <S.Reference>LINKEDIN</S.Reference>
