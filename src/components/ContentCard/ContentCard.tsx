@@ -27,9 +27,9 @@ const ContentCard: React.FC<ContentCardProps> = ({ content }) => {
   return (
     <S.Card
       key="content-card"
-      initial={{ opacity: 0, height: 0, margin: 0 }}
-      animate={{ opacity: 1, height: 'fit-content', margin: '8px 0' }}
-      exit={{ opacity: 0, height: 0, margin: 0 }}
+      initial={{ height: 0, margin: 0 }}
+      animate={{ height: 'fit-content', margin: '8px 0' }}
+      exit={{ height: 0, margin: 0 }}
     >
       <S.Grid>
         <S.TextContent>

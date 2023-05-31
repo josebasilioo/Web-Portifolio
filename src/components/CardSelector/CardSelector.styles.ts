@@ -73,7 +73,7 @@ export const Content = styled.section`
 
 export const Text = styled.p`
   font-size: 1.775rem;
-  font-weight: 500;
+  font-weight: 700;
   color: white;
 
   @media (max-width: 863px) {

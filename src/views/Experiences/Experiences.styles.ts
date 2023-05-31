@@ -47,7 +47,6 @@ export const ExperienceContent = styled.div`
   height: fit-content;
   padding: 8px 0;
   width: 100%;
-  gap: 16px;
 `;
 
 export const Image = styled.img`

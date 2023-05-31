@@ -8,6 +8,8 @@ export const Card = styled(motion.div)`
   width: 100%;
   border-radius: 10px;
   background-color: #4831d4;
+  overflow: auto;
+  overflow-y: hidden;
 
   @media (max-width: 480px) {
     width: 100%;

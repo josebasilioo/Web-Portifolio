@@ -1,7 +1,13 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Lato } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const mont = Lato({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  weight: ['100', '300', '400', '700', '900'],
+  // weight: ['100', '200', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Basi App',
@@ -15,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={mont.className}>{children}</body>
     </html>
   );
 }

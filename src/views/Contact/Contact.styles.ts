@@ -70,13 +70,13 @@ export const Title = styled.p`
 export const Subtitle = styled.p`
   color: white;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 900;
 `;
 
 export const Reference = styled.p`
   color: white;
   font-size: 1.625rem;
-  font-weight: 800;
+  font-weight: 900;
 
   @media (max-width: 620px) {
     font-size: 1.325rem;
