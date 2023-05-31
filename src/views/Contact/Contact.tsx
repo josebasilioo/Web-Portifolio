@@ -11,7 +11,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
     <S.Section id={id}>
       <S.TitleContent>
         <S.Title>
-          You can connect with me on,{' '}
+          Você pode se conectar comigo através do{' '}
           <S.Link
             href="https://www.linkedin.com/in/josebasilio/"
             target="_blank"
@@ -22,14 +22,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
           <S.Link href="https://github.com/josebasilioo" target="_blank">
             GitHub
           </S.Link>
-          ,{' '}
-          <S.Link
-            href="https://www.instagram.com/basi______________/"
-            target="_blank"
-          >
-            Instagram
-          </S.Link>
-          , or via{' '}
+          , ou via{' '}
           <S.Link href="mailto:josebasiliosilvaneto@gmail.com" target="_blank">
             Email
           </S.Link>
@@ -56,17 +49,6 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
             <S.Reference>
               <S.Bold href="https://github.com/josebasilioo" target="_blank">
                 github.com/josebasilioo
-              </S.Bold>
-            </S.Reference>
-          </S.Box>
-          <S.Box>
-            <S.Reference>INSTAGRAM</S.Reference>
-            <S.Reference>
-              <S.Bold
-                href="https://www.instagram.com/basi______________/"
-                target="_blank"
-              >
-                @basi______________
               </S.Bold>
             </S.Reference>
           </S.Box>

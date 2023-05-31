@@ -6,19 +6,31 @@ import * as S from './TopBar.styles';
 const options = [
   {
     name: 'Home',
-    href: '/portifolio/#home',
+    href:
+      process.env.REACT_APP_ENV === 'production'
+        ? '/portifolio/#home'
+        : '/#home',
   },
   {
     name: 'Expertise',
-    href: '/portifolio/#expertise',
+    href:
+      process.env.REACT_APP_ENV === 'production'
+        ? '/portifolio/#expertise'
+        : '/#expertise',
   },
   {
     name: 'Experiências',
-    href: '/portifolio/#experiences',
+    href:
+      process.env.REACT_APP_ENV === 'production'
+        ? '/portifolio/#experiences'
+        : '/#experiences',
   },
   {
     name: 'Contato',
-    href: '/portifolio/#contact',
+    href:
+      process.env.REACT_APP_ENV === 'production'
+        ? '/portifolio/#contact'
+        : '/#contact',
   },
 ];
 

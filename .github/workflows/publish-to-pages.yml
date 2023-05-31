@@ -6,6 +6,7 @@ on:
 
 env:
   NODE_AUTH_TOKEN: ${{ secrets.PAGES_DEPLOYMENT }}
+  REACT_APP_ENV: ${{ secrets.ENVIROMENT }}
 
 permissions:
   contents: read
