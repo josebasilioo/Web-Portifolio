@@ -12,3 +12,9 @@ export const waveColors = [
   '#FF0099',
   '#CC00FF',
 ];
+
+export const themes = {
+  dark: {
+    background: 'rgb(13, 17, 23)',
+  },
+};

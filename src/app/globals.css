@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   height: 100%;
   scroll-behavior: smooth;
+  background-color: var(--primary-color);
 }
 
 html {
@@ -23,5 +24,16 @@ h1, h2, h3, text, p, a, span {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:root {
+  --primary-color: rgb(13, 17, 23);
+  --secondary-color: #010409;
+  --yaml-color: #a074c4;
+  --default-label: #7D8590;
+  --selected-label: #81B88B;
+  --default-border-color: rgb(48, 54, 61);
+  --selected-border-top-color: #f78166;
+  --selected-border-bottom-color: #0d1117;
 }
 
