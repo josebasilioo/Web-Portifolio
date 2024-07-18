@@ -196,7 +196,7 @@ export default function Main() {
     setIsClient(true); // Set the flag indicating that we are on the client
 
     const showTypewritersInSequence = async () => {
-      const delays = content.map((_, i) => i * 20);
+      const delays = content.map((_, i) => i * 0);
 
       for (let i = 0; i < delays.length; i++) {
         await delay(delays[i]);

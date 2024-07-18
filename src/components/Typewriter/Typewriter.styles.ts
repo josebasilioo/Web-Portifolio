@@ -11,7 +11,7 @@ export const Typing = styled.p<TypingProps>`
   // blink in future
   border-right: transparent;
   font-family: Menlo, Monaco, 'Courier New', monospace;
-  font-size: 1.125em;
+  font-size: 11px;
   color: white;
   ${({ number }) =>
     number &&

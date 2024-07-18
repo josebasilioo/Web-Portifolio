@@ -7,13 +7,20 @@ interface IdentProps {
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  min-width: fit-content;
   gap: 8px;
   margin-top: 70px;
   margin-bottom: 20px;
   margin-left: 30px;
+  overflow-x: auto;
 
   & > div:last-child > p {
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 `;
 
