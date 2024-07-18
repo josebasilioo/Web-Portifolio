@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
   margin-top: 70px;
   margin-bottom: 20px;
   margin-left: 30px;
+  overflow: hidden;
 
   & > div:last-child > p {
     color: white;
