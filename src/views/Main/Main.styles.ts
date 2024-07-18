@@ -1,40 +1,37 @@
-import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const Section = styled.section`
+interface IdentProps {
+  number: number;
+}
+
+export const Wrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  gap: 8px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+  & > div:last-child > p {
+    color: white;
+  }
 `;
 
-export const ContentBox = styled(motion.section)`
+export const RowWrapper = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+`;
+
+export const Number = styled.p`
+  width: 18px;
+  display: flex;
   justify-content: center;
-  flex-direction: column;
-  gap: 16px;
-  width: 80%;
-  height: fit-content;
-  position: absolute;
-  z-index: 1;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+  font-size: 12px;
+  color: #6e7681;
 `;
 
-export const Title = styled.h1`
-  font-style: italic;
-  color: white;
-  z-index: 1;
-  font-size: 8.375rem;
-  text-align: center;
-`;
-
-export const Subtitle = styled.h2`
-  font-style: italic;
-  color: white;
-  z-index: 1;
-  font-size: 2.375rem;
-  text-align: center;
+export const Ident = styled.span<IdentProps>`
+  width: ${({ number }) => `${number * 10}px`};
 `;

@@ -35,5 +35,7 @@ a {
   --default-border-color: rgb(48, 54, 61);
   --selected-border-top-color: #f78166;
   --selected-border-bottom-color: #0d1117;
+  --variable-green: #7EE787;
+  --variable-blue: #A5D6FF;
 }
 
