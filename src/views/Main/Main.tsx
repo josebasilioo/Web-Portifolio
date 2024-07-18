@@ -168,12 +168,12 @@ const content = [
   },
   {
     mark: 'communication',
-    text: '[Portuguese, English B1]',
+    text: '',
     ident: 4,
   },
   {
     mark: '',
-    text: '',
+    text: '[Portuguese, English B1]',
     ident: 6,
   },
   {
