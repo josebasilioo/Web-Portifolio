@@ -64,72 +64,72 @@ const content = [
   {
     mark: 'experience',
     text: '',
-    ident: 4,
+    ident: 2,
   },
   {
     mark: 'Cloud Operations Intern at Valcann (Nov 2023 – Present)',
     text: '',
-    ident: 6,
+    ident: 4,
   },
   {
     mark: '',
     text: 'Managed cloud environments for 20+ clients',
-    ident: 8,
+    ident: 6,
   },
   {
     mark: '',
     text: 'Automated and optimized AWS services',
-    ident: 8,
+    ident: 6,
   },
   {
     mark: 'Front-end Engineer at aca.so (Jun 2021 – Dec 2022)',
     text: '',
-    ident: 6,
+    ident: 4,
   },
   {
     mark: '',
     text: 'Developed an educational platform and PWA',
-    ident: 8,
+    ident: 6,
   },
   {
     mark: 'Software Manager at CITi (Jan 2021 – Jul 2021)',
     text: '',
-    ident: 6,
+    ident: 4,
   },
   {
     mark: '',
     text: 'Aligned project scope and deadlines',
-    ident: 8,
+    ident: 6,
   },
   {
     mark: '',
     text: 'Applied Scrum, managed team development',
-    ident: 8,
+    ident: 6,
   },
   {
     mark: 'Selection Process Coordinator at CITi (Sep 2020 – Dec 2020)',
     text: '',
-    ident: 6,
+    ident: 4,
   },
   {
     mark: '',
     text: 'Led selection process for 300 candidates',
-    ident: 8,
-  },
-  {
-    mark: '',
-    text: 'Planned trainee program, managed training',
-    ident: 8,
-  },
-  {
-    mark: 'Full-Stack Developer at CITi (Jul 2020 – Jul 2021)',
-    text: '',
     ident: 6,
   },
   {
     mark: '',
+    text: 'Planned trainee program, managed training',
+    ident: 6,
+  },
+  {
+    mark: 'Full-Stack Developer at CITi (Jul 2020 – Jul 2021)',
+    text: '',
+    ident: 4,
+  },
+  {
+    mark: '',
     text: 'Built platforms for psychologists a task managers and text editors for law companies',
-    ident: 8,
+    ident: 6,
   },
   {
     mark: 'skills',
